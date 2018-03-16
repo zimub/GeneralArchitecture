@@ -14,6 +14,13 @@
 		97D6F8132059305A00131D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D6F8112059305A00131D5C /* LaunchScreen.storyboard */; };
 		97D6F81E2059305A00131D5C /* newProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6F81D2059305A00131D5C /* newProductTests.swift */; };
 		97D6F8292059305A00131D5C /* newProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6F8282059305A00131D5C /* newProductUITests.swift */; };
+		CD563976205BB81C00A0B66D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56396E205BB81C00A0B66D /* BaseViewController.swift */; };
+		CD563977205BB81C00A0B66D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56396F205BB81C00A0B66D /* MainViewController.swift */; };
+		CD563978205BB81C00A0B66D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD563970205BB81C00A0B66D /* BaseNavigationController.swift */; };
+		CD563979205BB81C00A0B66D /* Bundle _ Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD563973205BB81C00A0B66D /* Bundle _ Extension.swift */; };
+		CD56397A205BB81C00A0B66D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD563975205BB81C00A0B66D /* MineViewController.swift */; };
+		CD56397F205BB82800A0B66D /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56397C205BB82800A0B66D /* HomePageViewController.swift */; };
+		CD563980205BB82800A0B66D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56397E205BB82800A0B66D /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		97D6F8242059305A00131D5C /* newProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D6F8282059305A00131D5C /* newProductUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newProductUITests.swift; sourceTree = "<group>"; };
 		97D6F82A2059305A00131D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD56396E205BB81C00A0B66D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CD56396F205BB81C00A0B66D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CD563970205BB81C00A0B66D /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		CD563973205BB81C00A0B66D /* Bundle _ Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle _ Extension.swift"; sourceTree = "<group>"; };
+		CD563975205BB81C00A0B66D /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		CD56397C205BB82800A0B66D /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		CD56397E205BB82800A0B66D /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,11 @@
 		97D6F8072059305A00131D5C /* newProduct */ = {
 			isa = PBXGroup;
 			children = (
+				CD56396D205BB81C00A0B66D /* Main */,
+				CD56397B205BB82800A0B66D /* HomePage */,
+				CD56397D205BB82800A0B66D /* Explore */,
+				CD563974205BB81C00A0B66D /* Mine */,
+				CD563971205BB81C00A0B66D /* Tools */,
 				97D6F8082059305A00131D5C /* AppDelegate.swift */,
 				97D6F80A2059305A00131D5C /* ViewController.swift */,
 				97D6F80C2059305A00131D5C /* Main.storyboard */,
@@ -123,6 +142,56 @@
 				97D6F82A2059305A00131D5C /* Info.plist */,
 			);
 			path = newProductUITests;
+			sourceTree = "<group>";
+		};
+		CD56396D205BB81C00A0B66D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CD56396E205BB81C00A0B66D /* BaseViewController.swift */,
+				CD56396F205BB81C00A0B66D /* MainViewController.swift */,
+				CD563970205BB81C00A0B66D /* BaseNavigationController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CD563971205BB81C00A0B66D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CD563972205BB81C00A0B66D /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CD563972205BB81C00A0B66D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD563973205BB81C00A0B66D /* Bundle _ Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CD563974205BB81C00A0B66D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				CD563975205BB81C00A0B66D /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		CD56397B205BB82800A0B66D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				CD56397C205BB82800A0B66D /* HomePageViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		CD56397D205BB82800A0B66D /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				CD56397E205BB82800A0B66D /* ExploreViewController.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +330,13 @@
 			files = (
 				97D6F80B2059305A00131D5C /* ViewController.swift in Sources */,
 				97D6F8092059305A00131D5C /* AppDelegate.swift in Sources */,
+				CD563976205BB81C00A0B66D /* BaseViewController.swift in Sources */,
+				CD56397A205BB81C00A0B66D /* MineViewController.swift in Sources */,
+				CD56397F205BB82800A0B66D /* HomePageViewController.swift in Sources */,
+				CD563980205BB82800A0B66D /* ExploreViewController.swift in Sources */,
+				CD563978205BB81C00A0B66D /* BaseNavigationController.swift in Sources */,
+				CD563977205BB81C00A0B66D /* MainViewController.swift in Sources */,
+				CD563979205BB81C00A0B66D /* Bundle _ Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DU4642D7A;
 				INFOPLIST_FILE = newProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = optaim.com.newProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DU4642D7A;
 				INFOPLIST_FILE = newProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = optaim.com.newProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
