@@ -1,17 +1,19 @@
 //
-//  HomePageViewController.swift
-//  new product
+//  DetailViewController.swift
+//  newProduct
 //
-//  Created by pgw on 2018/3/14.
+//  Created by pgw on 2018/7/20.
 //  Copyright © 2018年 pgw. All rights reserved.
 //
 
 import UIKit
 
-class HomePageViewController: BaseViewController {
+class DetailViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navItem.title = "俺是详情页"
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

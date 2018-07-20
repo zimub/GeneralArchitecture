@@ -3,4 +3,4 @@
 //
 
 #import "NetworkRequestParameters.h"
-
+#import "DeviceInfo.h"

@@ -1,5 +1,5 @@
 //
-//  ExploreViewController.swift
+//  MineViewController.swift
 //  new product
 //
 //  Created by pgw on 2018/3/14.
@@ -8,16 +8,19 @@
 
 import UIKit
 
-class ExploreViewController: BaseViewController {
-
+class MineViewController: BaseViewController {
+    var topBgImageView : UIImageView?
+    var backImgHeight:CGFloat = 0.0
+    var backImgWidth:CGFloat = 0.0
+    var backImgOrgy:CGFloat = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "哇咔咔"
+        self.navItem.title = "个人中心"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
 }
