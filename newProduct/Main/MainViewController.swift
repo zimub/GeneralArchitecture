@@ -19,9 +19,10 @@ class MainViewController: UITabBarController {
     }
   func setUpChildControllers(){
     let array = [
-        ["clsName":"HomePageViewController","title":"首页","imageName":"clear"],
-        ["clsName":"ExploreViewController","title":"探索","imageName":"clear"],
-        ["clsName":"MineViewController","title":"我的","imageName":"clear"],
+        ["clsName":"HomePageViewController","title":"刷新","imageName":"home"],
+        ["clsName":"HomePageViewController","title":"视频","imageName":"message_center"],
+        ["clsName":"ExploreViewController","title":"任务","imageName":"discover"],
+        ["clsName":"MineViewController","title":"我的","imageName":"profile"],
         ]
     
     var arrayM = [UIViewController]()
@@ -43,10 +44,11 @@ class MainViewController: UITabBarController {
         //创建视图控制器
         let vc = cls.init()
         vc.title = title
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], for: .highlighted)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.font : UIFont.systemFont(ofSize: 24)], for: .normal)//默认是12号
-        vc.tabBarItem.image = UIImage.init(named:imageName)
-
+        self.tabBar.tintColor = UIColor.orange
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], for: .selected)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.font : UIFont.systemFont(ofSize: 24)], for: .selected)//默认是12号
+        vc.tabBarItem.image = UIImage(named: "tabbar_"+imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar"+imageName + "_highlighted")?.withRenderingMode(.alwaysOriginal)
         let nav = BaseNavigationController.init(rootViewController: vc)
         return nav
         
