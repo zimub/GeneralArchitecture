@@ -28,7 +28,6 @@ class BaseViewController: UIViewController {
         if DeviceInfo.isIphoneX(){
             navigationBar.frame = CGRect(x: 0, y: 44, width: UIScreen.main.bounds.width, height: 44)
         }else{
-//            navigationBar.frame = CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44)
             navigationBar.frame = CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44)
         }//20
         //添加导航条
